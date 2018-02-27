@@ -1,6 +1,5 @@
 
-FROM openjdk:8
-
-ADD target/petclinic.war petclinic.war
+FROM tomcat:8.0-alpine
+COPY target/petclinic.war /usr/local/tomcat/webapps/petclinic.war
 EXPOSE 8080
-CMD ["java" , "-jar" "petclinic.war"]
+CMD [ "catalina.sh" , "run"]
