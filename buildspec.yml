@@ -11,6 +11,4 @@ phases:
       - mvn package
 artifacts:
   files:
-    - '**/*'
-  base-directory: 'output'
-  discard-paths: yes
+    - target/petclinic.war
