@@ -11,4 +11,5 @@ phases:
       - mvn package
 artifacts:
   files:
-    - target/petclinic.war
+    - target/spring-petclinic-1-0.zip
+
